@@ -1,0 +1,82 @@
+/* ... existing code ... */
+
+/* Detailed Activities (Phu Quoc Expansion) */
+.detailed-activities {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.activity-row {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background: rgba(15, 23, 42, 0.6);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.activity-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.activity-image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    height: 300px;
+}
+
+.activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.activity-row:hover .activity-image img {
+    transform: scale(1.1);
+}
+
+.activity-text {
+    flex: 1;
+}
+
+.activity-text h3 {
+    color: var(--neon-blue);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.activity-text p {
+    font-size: 1.1rem;
+    color: var(--text-white);
+    margin-bottom: 1.5rem;
+}
+
+.activity-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--neon-pink);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .activity-row, .activity-row:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .activity-image {
+        width: 100%;
+        height: 200px;
+    }
+}
