@@ -1,0 +1,97 @@
+/* FLIGHT DETAILS BOX & SPICED UP STYLES */
+/* New Neon Colors injected here for safety */
+:root {
+    --neon-pink: #ff0055;
+    --neon-purple: #d946ef;
+    --neon-blue: #0ea5e9;
+    --neon-green: #39FF14;
+    --gold: #fbbf24;
+}
+
+.flight-details-box {
+    margin-top: 3rem;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 2.5rem;
+    border: 1px solid var(--neon-blue);
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(14, 165, 233, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.flight-details-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(189, 0, 255, 0.2);
+    border-color: var(--neon-purple);
+}
+
+.flight-details-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 4px; height: 100%;
+    background: linear-gradient(to bottom, var(--neon-blue), var(--neon-purple));
+}
+
+.flight-details-box h3 {
+    background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1rem;
+}
+
+.flight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    text-align: left;
+}
+
+.flight-grid h4 {
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+.flight-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.flight-details-box li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--text-gray);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    line-height: 1.4;
+}
+
+.flight-details-box li strong {
+    color: var(--text-white);
+    min-width: 50px;
+}
+
+.flight-note {
+    margin-top: 2rem;
+    font-style: italic;
+    color: var(--text-gray);
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .flight-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

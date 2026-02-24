@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_prices.css">
 </head>
 <body>
     <div class="scroll-progress" id="scrollProgress"></div>
@@ -59,7 +60,7 @@
     <!-- Section 2: Ho Chi Minh City – "Neon, Rooftops & Gaming" -->
     <section class="city-section">
         <div class="container">
-            <h2 class="section-title neon-pink" data-aos="fade-up">HO CHI MINH CITY</h2>
+            <h2 class="section-title" data-aos="fade-up">HO CHI MINH CITY</h2>
             <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">NEON • ROOFTOPS • GAMING</p>
 
             <div class="grid-layout">
@@ -86,13 +87,20 @@
                     </div>
                 </div>
             </div>
+
+            <!-- UNLOCK MENU BUTTON -->
+            <div class="unlock-btn-container" data-aos="fade-up" data-aos-delay="200">
+                <button id="unlockBtn" class="unlock-btn">
+                    <span>Unlock Secret Menu</span>
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- Section 3: The Cost Visualizer (Interactive) -->
     <section class="cost-section">
         <div class="container">
-            <h2 class="section-title text-gold" data-aos="fade-up">KONGEN AV LAVBUDSJETT</h2>
+            <h2 class="section-title" data-aos="fade-up">KONGEN AV LAVBUDSJETT</h2>
             <p class="section-intro" data-aos="fade-up">Få mer for pengene uten å ofre luksus.</p>
             
             <div class="comparison-container">
@@ -110,9 +118,18 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Flytur</td>
-                                <td>10.000 kr</td>
-                                <td>9.000 kr</td>
+                                <td>Flytur (Helge)</td>
+                                <td class="highlight-vn">10.455 kr</td>
+                                <td rowspan="2" style="vertical-align: middle;">9.000 kr</td>
+                            </tr>
+                            <tr>
+                                <td>Flytur (Egil/Jan)</td>
+                                <td class="highlight-vn">11.714 kr</td>
+                            </tr>
+                            <tr>
+                                <td>Innenriks (Ca)</td>
+                                <td>600 kr</td>
+                                <td>-</td>
                             </tr>
                             <tr>
                                 <td>Villa (Overnatting)</td>
@@ -125,9 +142,13 @@
                                 <td>650 kr</td>
                             </tr>
                             <tr>
-                                <td>Totalt</td>
-                                <td class="total-vn">15.300 kr</td>
-                                <td>17.700 kr</td>
+                                <td>Totalt (Helge)</td>
+                                <td class="total-vn">~15.655 kr</td>
+                                <td rowspan="2" style="vertical-align: middle;">17.700 kr</td>
+                            </tr>
+                            <tr>
+                                <td>Totalt (Egil/Jan)</td>
+                                <td class="total-vn">~16.914 kr</td>
                             </tr>
                         </tbody>
                     </table>
@@ -170,7 +191,7 @@
     <section class="island-section">
         <div class="parallax-bg" style="background-image: url('16016190-phu-quoc-island-south-vietnam.webp');"></div>
         <div class="content-wrapper">
-            <h2 class="section-title neon-blue" data-aos="fade-right">PHU QUOC ISLAND</h2>
+            <h2 class="section-title" data-aos="fade-right">PHU QUOC ISLAND</h2>
             <p class="section-subtitle" data-aos="fade-right">PARADISE & ADRENALINE</p>
 
             <div class="feature-grid">
@@ -256,39 +277,85 @@
     <!-- Section 6: Itinerary & Logistics -->
     <section id="itinerary" class="itinerary-section">
         <div class="container">
-            <h2 class="section-title neon-pink" data-aos="fade-up">THE MASTER PLAN</h2>
+            <h2 class="section-title" data-aos="fade-up">THE MASTER PLAN</h2>
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-right">
-                    <div class="date">7-8 MARS</div>
+                    <div class="date">18. APRIL</div>
                     <div class="content">
-                        <h3>DEPARTURE</h3>
-                        <p>Oslo -> Bangkok -> Ho Chi Minh City</p>
+                        <h3>PRE-GAME (EGIL & JAN HELGE)</h3>
+                        <p>Haugesund -> Oslo (16:45). Overnatting i hovedstaden.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-left">
-                    <div class="date">9-10 MARS</div>
+                    <div class="date">19. APRIL</div>
                     <div class="content">
-                        <h3>HCMC TAKEOVER</h3>
-                        <p>Party, Rooftop Gaming & Bui Vien Street</p>
+                        <h3>THE TAKEOFF (ALLE)</h3>
+                        <p>Oslo (13:45) -> Bangkok -> Ho Chi Minh City. <br><small>Thai Airways. 1t 20m transfer i BKK.</small></p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-right">
-                    <div class="date">10-15 MARS</div>
+                    <div class="date">20-22. APRIL</div>
                     <div class="content">
-                        <h3>ISLAND LIFE (PHU QUOC)</h3>
-                        <p>Villa, Beach, Cable Cars & Grand World</p>
+                        <h3>HO CHI MINH CITY</h3>
+                        <p>Neon, Rooftops & Gaming. 1-2 dager med kaos.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-left">
-                    <div class="date">15 MARS</div>
+                    <div class="date">22-26. APRIL</div>
                     <div class="content">
-                        <h3>RETURN</h3>
-                        <p>Hjem via Bangkok. Fulle av minner (og billig øl).</p>
+                        <h3>PHU QUOC (DEL 1)</h3>
+                        <p>Fly til øya (~600 kr). Villa, strand og fornøyelsesparker.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="date">26. APRIL</div>
+                    <div class="content">
+                        <h3>HELGE RETUR</h3>
+                        <p>20:10 fra HCMC -> Bangkok -> Hjem. <br><small>Takk for innsatsen, legende.</small></p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="date">26. ARR - 3. MAI</div>
+                    <div class="content">
+                        <h3>PHU QUOC (DEL 2)</h3>
+                        <p>Egil & Jan Helge fortsetter festen. Dypdykk i øylivet.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="date">3. MAI</div>
+                    <div class="content">
+                        <h3>FINAL RETURN</h3>
+                        <p>Egil & Jan Helge: 20:10 fra HCMC -> Bangkok -> Hjem.</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Flight Details Expansion -->
+            <div class="flight-details-box" data-aos="zoom-in">
+                <h3>FLYGNING DETALJER (THAI AIRWAYS)</h3>
+                <div class="flight-grid">
+                    <div>
+                        <h4>HELGE (KR 10.455)</h4>
+                        <ul>
+                            <li>✈️ <strong>UT:</strong> 19. Apr 13:45 Oslo - BKK - HCMC</li>
+                            <li>✈️ <strong>HJEM:</strong> 26. Apr 20:10 HCMC - BKK - Oslo</li>
+                            <li>🧳 Innsjekket bagasje + Carry-on</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>EGIL & JAN HELGE (KR 11.714)</h4>
+                        <ul>
+                            <li>✈️ <strong>PRE:</strong> 18. Apr 16:45 HAU - OSL</li>
+                            <li>✈️ <strong>UT:</strong> 19. Apr 13:45 Oslo - BKK - HCMC</li>
+                            <li>✈️ <strong>HJEM:</strong> 3. Mai 20:10 HCMC - BKK - Oslo</li>
+                            <li>🧳 Innsjekket bagasje + Carry-on</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="flight-note">* Innenriks fly til Phu Quoc kommer i tillegg (ca 600 kr t/r)</p>
+            </div>
             
-            <div class="final-cta" data-aos="zoom-in">
+            <div class="final-cta" data-aos="zoom-in" style="margin-top: 2rem;">
                 <h2>ER DERE KLARE?</h2>
                 <button id="confettiBtn" class="cta-button big">JA, VI GÅR FOR VIETNAM!</button>
             </div>
@@ -298,6 +365,29 @@
     <footer>
         <p>&copy; 2026 Gutta på Tur. Operation Vietnam.</p>
     </footer>
+
+    <!-- UNLOCK MODAL -->
+    <div id="unlockModal" class="modal-overlay">
+        <button class="modal-close" onclick="document.getElementById('unlockModal').classList.remove('active')">&times;</button>
+        <div class="modal-content">
+            <div id="lottieContainer" class="modal-lottie-container">
+                <dotlottie-player
+                    id="unlockAnimation"
+                    src="Unlock.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    autoplay="false"
+                ></dotlottie-player>
+            </div>
+            <!-- Ensure image path is correct -->
+            <img src="funmenu.jpg" alt="Secret Menu" id="secretMenuImage" class="modal-image">
+            <audio id="funnySound" src="funny.mp3"></audio>
+        </div>
+    </div>
+
+    <!-- DotLottie Player -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -317,10 +407,11 @@
         });
 
         // --- COUNTDOWN TIMER ---
-        const targetDate = new Date("March 7, 2026 00:00:00").getTime();
+        const targetDate = new Date("April 19, 2026 13:45:00").getTime();
 
         const countdownInterval = setInterval(() => {
             const now = new Date().getTime();
+
             const distance = targetDate - now;
 
             if (distance < 0) {
@@ -434,6 +525,50 @@
             }, 500);
         });
 
+        // Unlock Feature Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const unlockBtn = document.getElementById('unlockBtn');
+            const modal = document.getElementById('unlockModal');
+            const lottiePlayer = document.getElementById('unlockAnimation');
+            const lottieContainer = document.getElementById('lottieContainer');
+            const secretImage = document.getElementById('secretMenuImage');
+
+            if (unlockBtn && modal && lottiePlayer) {
+                unlockBtn.addEventListener('click', () => {
+                    modal.classList.add('active');
+                    // Reset state
+                    lottieContainer.style.display = 'block';
+                    secretImage.style.display = 'none';
+                    
+                    // Play animation
+                    lottiePlayer.stop();
+                    lottiePlayer.play();
+                });
+
+                // When animation completes
+                lottiePlayer.addEventListener('complete', () => {
+                    setTimeout(() => {
+                        lottieContainer.style.display = 'none';
+                        secretImage.style.display = 'block';
+                        
+                        // Play unlock sound
+                        const funnySound = document.getElementById('funnySound');
+                        if (funnySound) {
+                            funnySound.currentTime = 0;
+                            funnySound.play().catch(e => console.log('Audio error:', e));
+                        }
+                    }, 500); // Small buffer
+                });
+
+                // Close on background click
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.classList.remove('active');
+                        lottiePlayer.stop();
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
